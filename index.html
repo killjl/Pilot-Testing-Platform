@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容发布平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>内容发布平台</h1>
+            <p>分享你的想法和内容</p>
+        </header>
+        
+        <main class="main-content">
+            <section class="publish-form">
+                <h2>发布新内容</h2>
+                <form id="postForm">
+                    <div class="form-group">
+                        <label for="title">标题:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">作者:</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">内容:</label>
+                        <textarea id="content" name="content" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">分类:</label>
+                        <select id="category" name="category">
+                            <option value="general">通用</option>
+                            <option value="technology">技术</option>
+                            <option value="life">生活</option>
+                            <option value="education">教育</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">发布</button>
+                </form>
+            </section>
+            
+            <section class="posts-list">
+                <h2>已发布内容</h2>
+                <div id="postsContainer" class="posts-container">
+                    <!-- 动态内容将在这里渲染 -->
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>© 2023 内容发布平台 | 使用HTML, CSS和JavaScript构建</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
