@@ -228,24 +228,53 @@ tr:hover {
 /* 响应式设计 - 小屏幕表格适配 */
 @media (max-width: 600px) {
 	
+	.header-content h1 {
+		font-size: 1.0rem;
+		margin-bottom: 5px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.header-content p {
+		font-size: 0.5rem;
+		opacity: 0.8;
+	}
+	
 	body{
 		font-size: 10px; 
 		line-height: 1.5;
 	}
 	
+	.section-header h2 {
+		color: #34495e;
+		font-size: 1.0rem;
+		font-weight: 700
+	}
+	
+	.bordered-text p {
+	  color: #333333;
+	  font-size: 8px;
+	  font-weight: 400;
+	  line-height: 1.6;
+	  text-indent: 2em;
+	}
+
 	.responsive-table {
-		width: 600px;
+		width: 100%;
+		height: auto;
 		overflow-x: auto; /* 启用横向滚动 */
 	}
 	
 	.fixed-ratio-img {
-		width: 600px;
-		height: auto; /* 改为流动高度 */
+		width: 100%;
+		height: auto;
 	}
 	
     table {
         display: block;
-		min-width: 600px; 
+		width: 100%;
+		height: auto;
     }
     
     thead {
