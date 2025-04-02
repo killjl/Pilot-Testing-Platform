@@ -112,6 +112,27 @@ body {
   text-indent: 2em;
 }
 
+.text-block {
+  text-indent: 2em;
+}
+
+.fixed-ratio-box {
+  width: 100%;
+  padding-top: 75%; /* 高度=宽度的75%（4:3比例） */
+  position: relative;
+  overflow: hidden;
+}
+
+.fixed-ratio-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /* 表格视图样式 */
 .responsive-table {
     width: 100%;
