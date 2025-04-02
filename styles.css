@@ -200,11 +200,12 @@ tr:hover {
     .header-content h1 {
         font-size: 1.8rem;
     }
-    
-    .data-container.card-view {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+	
+    .responsive-table {
+		width: 100%;
+		overflow-x: auto; /* 启用横向滚动 */
+	}
+	
     .stats-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -220,6 +221,7 @@ tr:hover {
 	
     table {
         display: block;
+		min-width: 600px; 
     }
     
     thead {
@@ -227,7 +229,7 @@ tr:hover {
     }
     
     tr {
-        display: block;
+        display: flex;
         margin-bottom: 15px;
         border-radius: 10px;
         overflow: hidden;
