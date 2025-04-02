@@ -230,14 +230,19 @@ tr:hover {
     .stats-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+	
+	.fixed-size-img {
+		width: 100%;
+		height: auto; /* 改为流动高度 */
+	}
 }
 
 /* 响应式设计 - 小屏幕表格适配 */
 @media (max-width: 600px) {
 	
 	body{
-		font-size: 18px; 
-		line-height: 1.7;
+		font-size: 10px; 
+		line-height: 1.5;
 	}
 	
     table {
@@ -251,7 +256,7 @@ tr:hover {
     
     tr {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -269,7 +274,7 @@ tr:hover {
     td::before {
         content: attr(data-label);
         font-weight: bold;
-        margin-right: 15px;
+        margin-right: 10px;
     }
     
     td:last-child {
