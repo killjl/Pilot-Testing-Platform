@@ -316,7 +316,7 @@ tr:hover {
     }
     
     td {
-        display: block;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 15px;
