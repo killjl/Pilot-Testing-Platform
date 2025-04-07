@@ -1,9 +1,20 @@
 [[plugins]]  
-package = "@netlify/plugin-lighthouse"  
+	package = "@netlify/plugin-lighthouse"  
 
 [[plugins]]  
-package = "@netlify/plugin-image-optim"  
-  [plugins.inputs]
-	formats = ["webp", "original"]  
-	compress = true  
-	lazy = true  
+	package = "@netlify/plugin-image-optim"  
+	[plugins.inputs]
+		formats = ["webp", "original"]  
+		compress = true  
+		lazy = true  
+
+[[headers]]  
+	for = "/*"  
+	[headers.values]  
+		Cache-Control = "public, max-age=3600"  
+		X-Frame-Options = "DENY"   
+
+[[headers]]  
+	for = "/assets/*"  
+	[headers.values]  
+		Cache-Control = "public, max-age=31536000, immutable"  
