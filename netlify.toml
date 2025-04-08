@@ -1,9 +1,7 @@
  [[plugins]]  
-	package = "@netlify/plugin-image-optim"  
+	package = "netlify-plugin-image-optim"  
 	[plugins.inputs]
-		formats = ["webp", "original"]  
-		compress = true  
-		lazy = true  
+		quality = 80
 
 [[headers]]  
 	for = "/*"  
