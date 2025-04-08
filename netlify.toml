@@ -1,7 +1,4 @@
-[[plugins]]  
-	package = "netlify-plugin-lighthouse"  
-
-[[plugins]]  
+ [[plugins]]  
 	package = "netlify-plugin-image-optim"  
 	[plugins.inputs]
 		formats = ["webp", "original"]  
