@@ -145,7 +145,7 @@ table {
 }
 
 th {
-	width: 140px; 
+	width: 160px; 
 	padding-left: 24px; 
 	background: #e3f2fd;
     padding: 12px 15px;
@@ -213,7 +213,7 @@ td:hover {
 }
 
 /* 响应式设计 - 平板及以上 */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .responsive-table {
 		width: 100%;
 		overflow-x: auto; /* 启用横向滚动 */
@@ -230,7 +230,7 @@ td:hover {
 }
 
 /* 响应式设计 - 小屏幕表格适配 */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 	
 	.header-content h1 {
 		font-size: 1.2rem;
@@ -295,7 +295,7 @@ td:hover {
     }
 	
     tr {
-		width: 150%; 
+		width: 140%; 
         display: block;
         margin-bottom: 10px;
         border-radius: 10px;
