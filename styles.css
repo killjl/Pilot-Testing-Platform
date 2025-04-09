@@ -145,7 +145,7 @@ table {
 }
 
 th {
-	width: 160px; 
+	width: 140px; 
 	padding-left: 24px; 
 	background: #e3f2fd;
     padding: 12px 15px;
@@ -230,7 +230,7 @@ td:hover {
 }
 
 /* 响应式设计 - 小屏幕表格适配 */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	
 	.header-content h1 {
 		font-size: 1.2rem;
