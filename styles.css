@@ -213,7 +213,7 @@ td:hover {
 }
 
 /* 响应式设计 - 平板及以上 */
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .responsive-table {
 		width: 100%;
 		overflow-x: auto; /* 启用横向滚动 */
@@ -230,7 +230,7 @@ td:hover {
 }
 
 /* 响应式设计 - 小屏幕表格适配 */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	
 	.header-content h1 {
 		font-size: 1.2rem;
