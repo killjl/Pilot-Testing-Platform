@@ -92,25 +92,77 @@ body {
 }
 
 .section-header h2 {
+	margin-top: 10px;
     color: #34495e;
     font-size: 1.5rem;
 	font-weight: 700
 }
+	
+	.bordered-text1 {
+		border: 2px solid #3498db; /* 边框颜色 */
+		padding: 20px;            /* 内边距 */
+		border-radius: 8px;       /* 圆角 */
+		margin-bottom: 1.2em; /* 段落间距 */
+	  max-height: 80px;          /* 初始高度为0 */
+	  overflow: hidden;        /* 隐藏溢出内容 */
+	  transition: max-height 0.3s ease-out; /* 过渡动画 */
+	}
 
-.bordered-text {
-  border: 2px solid #3498db; /* 边框颜色 */
-  padding: 20px;            /* 内边距 */
-  border-radius: 8px;       /* 圆角 */
-  margin-bottom: 1.2em; /* 段落间距 */
-}
+	.bordered-text1.expanded {
+	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	}
+	
+	.bordered-text1 p {
+	  color: #333333;
+	  font-size:  1.0rem;
+	  font-weight: 400;
+	  line-height: 1.6;
+	  text-indent: 2em;
+	}
+	
+	.bordered-text2 {
+		border: 2px solid #3498db; /* 边框颜色 */
+		padding: 20px;            /* 内边距 */
+		border-radius: 8px;       /* 圆角 */
+		margin-bottom: 1.2em; /* 段落间距 */
+	  max-height: 80px;          /* 初始高度为0 */
+	  overflow: hidden;        /* 隐藏溢出内容 */
+	  transition: max-height 0.3s ease-out; /* 过渡动画 */
+	}
 
-.bordered-text p {
-  color: #333333;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  text-indent: 2em;
-}
+	.bordered-text2.expanded {
+	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	}
+	
+	.bordered-text2 p {
+	  color: #333333;
+	  font-size:  1.0rem;
+	  font-weight: 400;
+	  line-height: 1.6;
+	  text-indent: 2em;
+	}
+	
+	.bordered-text3 {
+		border: 2px solid #3498db; /* 边框颜色 */
+		padding: 20px;            /* 内边距 */
+		border-radius: 8px;       /* 圆角 */
+		margin-bottom: 1.2em; /* 段落间距 */
+	  max-height: 80px;          /* 初始高度为0 */
+	  overflow: hidden;        /* 隐藏溢出内容 */
+	  transition: max-height 0.3s ease-out; /* 过渡动画 */
+	}
+
+	.bordered-text3.expanded {
+	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	}
+	
+	.bordered-text3 p {
+	  color: #333333;
+	  font-size:  1.0rem;
+	  font-weight: 400;
+	  line-height: 1.6;
+	  text-indent: 2em;
+	}
 
 .text-block {
   color: #333333;
@@ -119,6 +171,129 @@ body {
   line-height: 1.6;
   text-indent: 2em;
 }
+
+.toggle-btn1 {
+	  padding: 12px 24px;
+	  /* 白色半透明基底 + 蓝色微渐变 */
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.9),  /* 主背景白色，适当透明 */
+		rgba(225, 240, 255, 0.7)   /* 添加淡蓝色渐变层 */
+	  );
+	  backdrop-filter: blur(8px);    /* 毛玻璃模糊效果 */
+	  color: #333333;                /* 文字用深蓝色 */
+	  border: 1px solid rgba(33, 150, 243, 0.3);  /* 边框浅蓝色 */
+	  border-radius: 12px;
+	  cursor: pointer;
+	  font-weight: 500;
+	  transition: all 0.3s;
+	  box-shadow: 
+		0 4px 6px rgba(26, 115, 232, 0.1), /* 外阴影（蓝色调） */
+		inset 0 1px 2px rgba(255, 255, 255, 0.5); /* 内高光 */
+	}
+
+	.toggle-btn1:hover {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.95),
+		rgba(210, 230, 255, 0.8)
+	  );
+	  border-color: rgba(33, 150, 243, 0.5);  /* 边框颜色加深 */
+	  box-shadow: 
+		0 6px 12px rgba(26, 115, 232, 0.15),
+		inset 0 2px 4px rgba(255, 255, 255, 0.6);
+	}
+	
+	.toggle-btn1:active {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.85),
+		rgba(200, 220, 245, 0.7)
+	  );
+	  transform: translateY(1px);  /* 点击下沉效果 */
+	}
+
+	.toggle-btn2 {
+	  padding: 12px 24px;
+	  /* 白色半透明基底 + 蓝色微渐变 */
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.9),  /* 主背景白色，适当透明 */
+		rgba(225, 240, 255, 0.7)   /* 添加淡蓝色渐变层 */
+	  );
+	  backdrop-filter: blur(8px);    /* 毛玻璃模糊效果 */
+	  color: #333333;                /* 文字用深蓝色 */
+	  border: 1px solid rgba(33, 150, 243, 0.3);  /* 边框浅蓝色 */
+	  border-radius: 12px;
+	  cursor: pointer;
+	  font-weight: 500;
+	  transition: all 0.3s;
+	  box-shadow: 
+		0 4px 6px rgba(26, 115, 232, 0.1), /* 外阴影（蓝色调） */
+		inset 0 1px 2px rgba(255, 255, 255, 0.5); /* 内高光 */
+	}
+
+	.toggle-btn2:hover {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.95),
+		rgba(210, 230, 255, 0.8)
+	  );
+	  border-color: rgba(33, 150, 243, 0.5);  /* 边框颜色加深 */
+	  box-shadow: 
+		0 6px 12px rgba(26, 115, 232, 0.15),
+		inset 0 2px 4px rgba(255, 255, 255, 0.6);
+	}
+	
+	.toggle-btn2:active {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.85),
+		rgba(200, 220, 245, 0.7)
+	  );
+	  transform: translateY(1px);  /* 点击下沉效果 */
+	}
+
+	.toggle-btn3 {
+	  padding: 12px 24px;
+	  /* 白色半透明基底 + 蓝色微渐变 */
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.9),  /* 主背景白色，适当透明 */
+		rgba(225, 240, 255, 0.7)   /* 添加淡蓝色渐变层 */
+	  );
+	  backdrop-filter: blur(8px);    /* 毛玻璃模糊效果 */
+	  color: #333333;                /* 文字用深蓝色 */
+	  border: 1px solid rgba(33, 150, 243, 0.3);  /* 边框浅蓝色 */
+	  border-radius: 12px;
+	  cursor: pointer;
+	  font-weight: 500;
+	  transition: all 0.3s;
+	  box-shadow: 
+		0 4px 6px rgba(26, 115, 232, 0.1), /* 外阴影（蓝色调） */
+		inset 0 1px 2px rgba(255, 255, 255, 0.5); /* 内高光 */
+	}
+
+	.toggle-btn3:hover {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.95),
+		rgba(210, 230, 255, 0.8)
+	  );
+	  border-color: rgba(33, 150, 243, 0.5);  /* 边框颜色加深 */
+	  box-shadow: 
+		0 6px 12px rgba(26, 115, 232, 0.15),
+		inset 0 2px 4px rgba(255, 255, 255, 0.6);
+	}
+	
+	.toggle-btn3:active {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.85),
+		rgba(200, 220, 245, 0.7)
+	  );
+	  transform: translateY(1px);  /* 点击下沉效果 */
+	}
 
 
 .fixed-ratio-img {
@@ -246,19 +421,78 @@ td:hover {
 	}
 	
 	body{
-		font-size: 12px; 
+		font-size: 15px; 
 		line-height: 1.5;
 	}
 	
 	.section-header h2 {
+		margin-top: 10px;
 		color: #34495e;
 		font-size: 1.0rem;
 		font-weight: 700
 	}
 	
-	.bordered-text p {
+	.bordered-text1 {
+		border: 2px solid #3498db; /* 边框颜色 */
+		padding: 20px;            /* 内边距 */
+		border-radius: 8px;       /* 圆角 */
+		margin-bottom: 1.2em; /* 段落间距 */
+	  max-height: 80px;          /* 初始高度为0 */
+	  overflow: hidden;        /* 隐藏溢出内容 */
+	  transition: max-height 0.3s ease-out; /* 过渡动画 */
+	}
+
+	.bordered-text1.expanded {
+	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	}
+	
+	.bordered-text1 p {
 	  color: #333333;
-	  font-size: 12px;
+	  font-size:  1.0rem;
+	  font-weight: 400;
+	  line-height: 1.6;
+	  text-indent: 2em;
+	}
+	
+	.bordered-text2 {
+		border: 2px solid #3498db; /* 边框颜色 */
+		padding: 20px;            /* 内边距 */
+		border-radius: 8px;       /* 圆角 */
+		margin-bottom: 1.2em; /* 段落间距 */
+	  max-height: 80px;          /* 初始高度为0 */
+	  overflow: hidden;        /* 隐藏溢出内容 */
+	  transition: max-height 0.3s ease-out; /* 过渡动画 */
+	}
+
+	.bordered-text2.expanded {
+	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	}
+	
+	.bordered-text2 p {
+	  color: #333333;
+	  font-size:  1.0rem;
+	  font-weight: 400;
+	  line-height: 1.6;
+	  text-indent: 2em;
+	}
+	
+	.bordered-text3 {
+		border: 2px solid #3498db; /* 边框颜色 */
+		padding: 20px;            /* 内边距 */
+		border-radius: 8px;       /* 圆角 */
+		margin-bottom: 1.2em; /* 段落间距 */
+	  max-height: 80px;          /* 初始高度为0 */
+	  overflow: hidden;        /* 隐藏溢出内容 */
+	  transition: max-height 0.3s ease-out; /* 过渡动画 */
+	}
+
+	.bordered-text3.expanded {
+	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	}
+	
+	.bordered-text3 p {
+	  color: #333333;
+	  font-size:  1.0rem;
 	  font-weight: 400;
 	  line-height: 1.6;
 	  text-indent: 2em;
@@ -266,10 +500,133 @@ td:hover {
 	
 	.text-block {
 	  color: #333333;
-	  font-size: 12px;
+	  font-size: 1.0rem;
 	  font-weight: 400;
 	  line-height: 1.6;
 	  text-indent: 2em;
+	}
+	
+	.toggle-btn1 {
+	  padding: 12px 24px;
+	  /* 白色半透明基底 + 蓝色微渐变 */
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.9),  /* 主背景白色，适当透明 */
+		rgba(225, 240, 255, 0.7)   /* 添加淡蓝色渐变层 */
+	  );
+	  backdrop-filter: blur(8px);    /* 毛玻璃模糊效果 */
+	  color: #333333;                /* 文字用深蓝色 */
+	  border: 1px solid rgba(33, 150, 243, 0.3);  /* 边框浅蓝色 */
+	  border-radius: 12px;
+	  cursor: pointer;
+	  font-weight: 500;
+	  transition: all 0.3s;
+	  box-shadow: 
+		0 4px 6px rgba(26, 115, 232, 0.1), /* 外阴影（蓝色调） */
+		inset 0 1px 2px rgba(255, 255, 255, 0.5); /* 内高光 */
+	}
+
+	.toggle-btn1:hover {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.95),
+		rgba(210, 230, 255, 0.8)
+	  );
+	  border-color: rgba(33, 150, 243, 0.5);  /* 边框颜色加深 */
+	  box-shadow: 
+		0 6px 12px rgba(26, 115, 232, 0.15),
+		inset 0 2px 4px rgba(255, 255, 255, 0.6);
+	}
+	
+	.toggle-btn1:active {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.85),
+		rgba(200, 220, 245, 0.7)
+	  );
+	  transform: translateY(1px);  /* 点击下沉效果 */
+	}
+
+	.toggle-btn2 {
+	  padding: 12px 24px;
+	  /* 白色半透明基底 + 蓝色微渐变 */
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.9),  /* 主背景白色，适当透明 */
+		rgba(225, 240, 255, 0.7)   /* 添加淡蓝色渐变层 */
+	  );
+	  backdrop-filter: blur(8px);    /* 毛玻璃模糊效果 */
+	  color: #333333;                /* 文字用深蓝色 */
+	  border: 1px solid rgba(33, 150, 243, 0.3);  /* 边框浅蓝色 */
+	  border-radius: 12px;
+	  cursor: pointer;
+	  font-weight: 500;
+	  transition: all 0.3s;
+	  box-shadow: 
+		0 4px 6px rgba(26, 115, 232, 0.1), /* 外阴影（蓝色调） */
+		inset 0 1px 2px rgba(255, 255, 255, 0.5); /* 内高光 */
+	}
+
+	.toggle-btn2:hover {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.95),
+		rgba(210, 230, 255, 0.8)
+	  );
+	  border-color: rgba(33, 150, 243, 0.5);  /* 边框颜色加深 */
+	  box-shadow: 
+		0 6px 12px rgba(26, 115, 232, 0.15),
+		inset 0 2px 4px rgba(255, 255, 255, 0.6);
+	}
+	
+	.toggle-btn2:active {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.85),
+		rgba(200, 220, 245, 0.7)
+	  );
+	  transform: translateY(1px);  /* 点击下沉效果 */
+	}
+
+	.toggle-btn3 {
+	  padding: 12px 24px;
+	  /* 白色半透明基底 + 蓝色微渐变 */
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.9),  /* 主背景白色，适当透明 */
+		rgba(225, 240, 255, 0.7)   /* 添加淡蓝色渐变层 */
+	  );
+	  backdrop-filter: blur(8px);    /* 毛玻璃模糊效果 */
+	  color: #333333;                /* 文字用深蓝色 */
+	  border: 1px solid rgba(33, 150, 243, 0.3);  /* 边框浅蓝色 */
+	  border-radius: 12px;
+	  cursor: pointer;
+	  font-weight: 500;
+	  transition: all 0.3s;
+	  box-shadow: 
+		0 4px 6px rgba(26, 115, 232, 0.1), /* 外阴影（蓝色调） */
+		inset 0 1px 2px rgba(255, 255, 255, 0.5); /* 内高光 */
+	}
+
+	.toggle-btn3:hover {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.95),
+		rgba(210, 230, 255, 0.8)
+	  );
+	  border-color: rgba(33, 150, 243, 0.5);  /* 边框颜色加深 */
+	  box-shadow: 
+		0 6px 12px rgba(26, 115, 232, 0.15),
+		inset 0 2px 4px rgba(255, 255, 255, 0.6);
+	}
+	
+	.toggle-btn3:active {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.85),
+		rgba(200, 220, 245, 0.7)
+	  );
+	  transform: translateY(1px);  /* 点击下沉效果 */
 	}
 
 	.responsive-table {
@@ -284,10 +641,8 @@ td:hover {
 	}
 	
     table {
-        display: block;
-		width: 100%;
+		width: 125%;
 		height: auto;
-		border-collapse: separate;
 		background-color: white;
 		border-radius: 10px;
 		overflow: auto;
@@ -295,8 +650,8 @@ td:hover {
     }
 	
     tr {
-		width: 200%; 
-        display: block;
+		width: 100%; 
+        display: flex;
         margin-bottom: 10px;
         border-radius: 10px;
         overflow: auto;
@@ -304,18 +659,20 @@ td:hover {
     }
 	
 	th {
-		width: 100%; 
-		display: block;
+		width: 40%; 
 		background: #e3f2fd;
+		display: flex;
 		text-align: left;
+		align-items: center;
 		padding: 12px 15px;
 		border-bottom: 2px solid #e0e0e0;
 	}
     
     td {
-		width: 100%; 
-        display: block;
+		width: 60%; 
         padding: 12px 15px;
+		display: flex;
+		align-items: center;
         text-align: left;
         border-bottom: 2px solid #e0e0e0;
     }

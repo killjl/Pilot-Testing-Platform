@@ -16,9 +16,19 @@
                 <p>-</p>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="平台搜索...">
-                <button><i class="fas fa-search"></i></button>
+                <input type="text" id="searchInput" placeholder="请输入搜索关键词...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
             </div>
+				<div class="results-container" id="resultsContainer">
+				<!-- 搜索结果将在这里动态生成 -->
+					<div class="no-results">
+						<p> </p>
+					</div>
+			</div>
+        
+			<div class="pagination" id="pagination">
+				<!-- 分页控件将在这里动态生成 -->
+			</div>
         </header>
         
         <main class="main-content">
@@ -34,17 +44,17 @@
                             <tbody>
                                 <tr>
 									<th class="" >平台名称</th>
-									<td class="">生物医学工程及先进材料开发中试平台</td>
+									<td class="name">生物医学工程及先进材料开发中试平台</td>
 									<th class="" >承担单位</th>
-									<td class="">广东顺德工业设计研究院（广东顺德创新设计研究院）</td>
+									<td class="com">广东顺德工业设计研究院（广东顺德创新设计研究院）</td>
 								</tr>
 							</tbody>
                             <tbody>
 								<tr>
 									<th class="" >所属行业/产业</th>
-									<td class="">医药健康、生物医药与健康、新材料、前沿新材料</td>
+									<td class="industry">医药健康、生物医药与健康、新材料、前沿新材料</td>
 									<th class="" >所在镇街</th>
-									<td class="">北滘镇</td>
+									<td class="town">北滘镇</td>
 								</tr>
 							</tbody>
 							<tbody>
@@ -79,16 +89,17 @@
 					<div class="section-header">
 						<h2>平台基本情况</h2>
 					</div>
-					<div class="bordered-text">
+					<div class="bordered-text1">
 						<p>
 							科技成果转化概念验证中心平台已建成总建筑面积约20,000平方米大楼，统筹配置了新能源、新材料、生物医药等领域的配套实验室6,000平方米，设备原值超2千万元，另配备了能满足试制生产、测试、加工要求的专用型中试实验室、通用性中试测试实验室以及机械加工中心，以及人才团队100余人。将围绕核心技术和高价值技术成果提供的概念验证服务打造成行业内概念验证中心标杆，着力破解科技成果转移转化难题。为全国90余所高校的科技成果转化提供概念验证服务，打造成为加速创新链与产业链融合的创新高地。
 						</p> 
 					</div> 
+					<button class="toggle-btn1" onclick="toggleCollapse1()">点击展开/收起</button>
 					
 					<div class="section-header">
 						<h2>平台对外开放服务情况</h2>
 					</div>
-					<div class="bordered-text">
+					<div class="bordered-text2">
 						<p>
 							为数字PCR、体外快速诊断及配套试剂、离体肝脏灌注系统设备、离体肺脏灌注系统设备、便携式ECMO等医疗器械进行中试验证及国产化开发应用。其中，数字PCR在国内头三家拿到了医疗器械注册证，并引进了广州的企业在佛山落地转化。体外快速诊断及配套试剂已孵化成出高企。离体肝脏灌注系统设备、离体肺脏灌注系统设备已作为科研机在国内相关三甲医院投入应用，并获得了德国红点奖以及iF设计奖。便携式ECMO已作为科研机定型，并实现了85%以上的国产化（其中大部分核心零部件均已实现低成本高质量国产化），目前正在探索下一步融资。
 							<div class="text-block">提供的中试服务包括但不限于医疗健康（耗材生产组装）工艺：</div>
@@ -98,10 +109,12 @@
 							<div class="text-block">4.套包全工序(自制泵头及管路)工艺：拆包->洗->覆->组->封装->灭菌。</div>
 						</p>
 					</div>
+					<button class="toggle-btn2" onclick="toggleCollapse2()">点击展开/收起</button>
+					
 					<div class="section-header">
 						<h2>平台对外提供服务内容</h2>
 					</div>
-					<div class="bordered-text">
+					<div class="bordered-text3">
 						<p> 
 							1.在医疗器械开发领域，可提供概念验证服务，进行早期成果的可行性验证、应用场景、工艺改进、样品试制、临床应用、产品示范等。
 							<div class="text-block">2.在工业材料、医用材料和新能源材料等先进材料开发和测试领域，可提供概念验证服务。</div>
@@ -111,6 +124,8 @@
 							<div class="text-block">6.研发支持与加工咨询，发挥科研平台和研发人员优势，解决客户开发、加工过程中的实际问题。</div>
 						</p>
 					</div>
+					<button class="toggle-btn3" onclick="toggleCollapse3()">点击展开/收起</button>
+					
 					<div class="section-header">
 						<h2>平台现场照片</h2>
 					</div>
@@ -163,5 +178,19 @@
     </div>
     
     <script src="script.js"></script>
+	<script>
+		function toggleCollapse1() {
+			const content1 = document.querySelector('.bordered-text1');
+			content1.classList.toggle('expanded');
+		}
+		function toggleCollapse2() {
+			const content2 = document.querySelector('.bordered-text2');
+			content2.classList.toggle('expanded');
+		}
+		function toggleCollapse3() {	
+			const content3 = document.querySelector('.bordered-text3');
+			content3.classList.toggle('expanded');
+		}
+	</script>
 </body>
 </html>
