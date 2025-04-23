@@ -164,14 +164,6 @@ body {
 	  text-indent: 2em;
 	}
 
-.text-block {
-  color: #333333;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  text-indent: 2em;
-}
-
 .toggle-btn1 {
 	  padding: 12px 24px;
 	  /* 白色半透明基底 + 蓝色微渐变 */
@@ -494,15 +486,6 @@ td:hover {
 	  color: #333333;
 	  font-size:  1.0rem;
 	  font-weight: 400;
-	  line-height: 1.6;
-	  text-indent: 2em;
-	}
-	
-	.text-block {
-	  color: #333333;
-	  font-size: 1.0rem;
-	  font-weight: 400;
-	  line-height: 1.6;
 	  text-indent: 2em;
 	}
 	
