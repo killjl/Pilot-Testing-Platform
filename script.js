@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			human: '陈晓玲',
 			phone: '0757-223998313',
 			inform:'科技成果转化概念验证中心平台已建成总建筑面积约20,000平方米大楼，统筹配置了新能源、新材料、生物医药等领域的配套实验室6,000平方米，设备原值超2千万元，另配备了能满足试制生产、测试、加工要求的专用型中试实验室、通用性中试测试实验室以及机械加工中心，以及人才团队100余人。将围绕核心技术和高价值技术成果提供的概念验证服务打造成行业内概念验证中心标杆，着力破解科技成果转移转化难题。为全国90余所高校的科技成果转化提供概念验证服务，打造成为加速创新链与产业链融合的创新高地。',
-			sevice:'为数字PCR、体外快速诊断及配套试剂、离体肝脏灌注系统设备、离体肺脏灌注系统设备、便携式ECMO等医疗器械进行中试验证及国产化开发应用。其中，数字PCR在国内头三家拿到了医疗器械注册证，并引进了广州的企业在佛山落地转化。体外快速诊断及配套试剂已孵化成出高企。离体肝脏灌注系统设备、离体肺脏灌注系统设备已作为科研机在国内相关三甲医院投入应用，并获得了德国红点奖以及iF设计奖。便携式ECMO已作为科研机定型，并实现了85%以上的国产化（其中大部分核心零部件均已实现低成本高质量国产化），目前正在探索下一步融资。<p>提供的中试服务包括但不限于医疗健康（耗材生产组装）工艺：</p><p>1.整体工艺：设计图/方案--原始数据及方案分析处理（转化成加工数据及方案）--原材料准备--零件材料制备-组装-检测。</p><p>2.套包不需要涂覆(套包外壳)工艺: 拆包->清洗->组装->封装->灭菌。<br>3.套包不需要清洗(外购沽净管路)工艺：拆包->涂覆-->组装->封装->灭菌。</p><p>4.套包全工序(自制泵头及管路)工艺：拆包->洗->覆->组->封装->灭菌。</p>',
+			sevice:'为数字PCR、体外快速诊断及配套试剂、离体肝脏灌注系统设备、离体肺脏灌注系统设备、便携式ECMO等医疗器械进行中试验证及国产化开发应企业在佛山落地转化。体外快速诊断及配套试剂已孵化成出高企。离体肝脏灌注系统设备、离体肺脏灌注系统设备已作为科研机在国内相关三甲医院投入应用，并获得了德国红点奖以及iF设计奖。便携式ECMO已作为科研机定型，并实现了85%以上的国产化（其中大部分核心零部件均已实现低成本高质量国产化），目前正在探索下一步融资。<p>提供的中试服务包括但不限于医疗健康（耗材生产组装）工艺：</p><p>1.整体工艺：设计图/方案--原始数据及方案分析处理（转化成加工数据及方案）--原材料准备--零件材料制备-组装-检测。</p><p>2.套包不需要涂覆(套包外壳)工艺: 拆包->清洗->组装->封装->灭菌。</p><p>3.套包不需要清洗(外购沽净管路)工艺：拆包->涂覆->组装->封装->灭菌。</p><p>4.套包全工序(自制泵头及管路)工艺：拆包->洗->覆->组->封装->灭菌。</p>',
 			sevcon:'1.在医疗器械开发领域，可提供概念验证服务，进行早期成果的可行性验证、应用场景、工艺改进、样品试制、临床应用、产品示范等。<p>2.在工业材料、医用材料和新能源材料等先进材料开发和测试领域，可提供概念验证服务。</p><p>3.通用机加和测试领域，可提供样品机加工、物质与成份测试、电子电路测试、材料性能测试、专业消毒等服务。</p><p>4.概念验证服务。通过配置人才团队、空间场地等资源，可提供仪器设备开发、自动化产线设计改造、人工智能、机械与软件设计、工业设计、试剂开发等技术服务。</p><p>5.人才培养，可为合作企业、单位提供研究生联合培养合作服务。 </p><p>6.研发支持与加工咨询，发挥科研平台和研发人员优势，解决客户开发、加工过程中的实际问题。</p>',
-			pht:'gongyanyuan/p1.webp'
+			pht:'<img class="fixed-ratio-img" src="gongyanyuan/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="gongyanyuan/p2.webp"  alt="现场图片" loading="lazy">'
 		},
 		
         
@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchButton = document.getElementById('searchButton');
     const resultsContainer = document.getElementById('resultsContainer');
     const paginationContainer = document.getElementById('pagination');
+	const cardall = document.getElementById('allsearch');
 
     // 分页设置
     const itemsPerPage = 5;
@@ -36,10 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentResults = [];
 
     // 初始化
+	cardall.addEventListener('click', performSearch);
     searchButton.addEventListener('click', performSearch);
     searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') performSearch();
     });
+	
 
     // 执行搜索
     function performSearch() {
@@ -96,11 +99,25 @@ document.addEventListener('DOMContentLoaded', function() {
             resultElement.className = 'result-item';
             
             resultElement.innerHTML = `
-                <h3>${item.name}</h3>
-                <p><strong>承担单位:</strong> ${item.com}</p>
-                <p><strong>所属行业/产业:</strong> ${item.industry} </p>
-				<p><strong>所在镇街:</strong> ${item.town} </p>
-                <button onclick="viewDetails(${item.id})" class="view-details">查看详情</button>
+					<div class="data-card">
+                        <div class="card-header">
+                            <h3>${item.name}</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-row">
+                                承担单位：${item.com}
+                            </div>
+                            <div class="card-row">
+                                所属行业/产业：${item.industry}
+                            </div>
+							<div class="card-row">
+                                所在镇街：${item.town}
+                            </div>
+							<button onclick="viewDetails(${item.id})" class="view-details">查看详情</button>
+                        </div>
+						
+                    </div>
+                
             `;
             
             resultsContainer.appendChild(resultElement);
@@ -111,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderPagination() {
         const totalPages = Math.ceil(currentResults.length / itemsPerPage);
         
-        if (totalPages <= 1) {
+        if (totalPages < 1) {
             paginationContainer.innerHTML = '';
             return;
         }
@@ -120,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 上一页按钮
         paginationHTML += `
-            <button ${currentPage === 1 ? 'disabled' : ''} 
+            <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} 
                     onclick="changePage(${currentPage - 1})">
                 上一页
             </button>
@@ -129,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // 页码按钮
         for (let i = 1; i <= totalPages; i++) {
             paginationHTML += `
-                <button ${i === currentPage ? 'class="active"' : ''} 
+                <button class="page-btn" ${i === currentPage ? 'class="active"' : ''} 
                         onclick="changePage(${i})">
                     ${i}
                 </button>
@@ -138,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 下一页按钮
         paginationHTML += `
-            <button ${currentPage === totalPages ? 'disabled' : ''} 
+            <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} 
                     onclick="changePage(${currentPage + 1})">
                 下一页
             </button>
@@ -249,11 +266,8 @@ document.addEventListener('DOMContentLoaded', function() {
 					<div class="section-header">
 						<h2>平台现场照片</h2>
 					</div>
+					<div> ${item.pht}</div>
 					
-					<img class="fixed-ratio-img" src="${item.pht}"  alt="现场图片" loading="lazy">
-					<img class="fixed-ratio-img" src="gongyanyuan/p2.webp"  alt="现场图片" loading="lazy">
-					
-            
 				</section>
             `;
         }
