@@ -30,24 +30,69 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultsContainer = document.getElementById('resultsContainer');
     const paginationContainer = document.getElementById('pagination');
 	const cardall = document.getElementById('allsearch');
+	const cardzs = document.getElementById('zssearch');
+	const cardgn = document.getElementById('gnsearch');
+	const areagroup = document.getElementById('areasearch');
+	const indusgroup = document.getElementById('indussearch');
 
     // 分页设置
     const itemsPerPage = 5;
     let currentPage = 1;
     let currentResults = [];
+	let searchTerm = ""; 
 
     // 初始化
-	cardall.addEventListener('click', performSearch);
-    searchButton.addEventListener('click', performSearch);
+	cardall.addEventListener('click', allsearch);
+	cardzs.addEventListener('click', zssearch);
+	cardgn.addEventListener('click', gnsearch);
+	areagroup.addEventListener('click', areasearch);
+	indusgroup.addEventListener('click', indussearch);
+    searchButton.addEventListener('click', clicksearch);
     searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') performSearch();
+        if (e.key === 'Enter') clicksearch();
     });
 	
+	
+	
+	function clicksearch(){
+		searchTerm = searchInput.value.trim();
+		performSearch();
+	}
+	
+	function areasearch(){
+		searchTerm = searchInput.value.trim();
+		performSearch();
+	}
+	
+	function indussearch(){
+		searchTerm = searchInput.value.trim();
+		performSearch();
+	}
+	
+	function allsearch(){
+		const pressed = this.getAttribute('aria-pressed') === 'true';
+		this.setAttribute('aria-pressed', String(!pressed));
+		searchTerm = '';
+		performSearch();
+	}
+	
+	function zssearch(){
+		const pressed = this.getAttribute('aria-pressed') === 'true';
+		this.setAttribute('aria-pressed', String(!pressed));
+		searchTerm = '中试';
+		performSearch();
+	}
+	
+	function gnsearch(){
+		const pressed = this.getAttribute('aria-pressed') === 'true';
+		this.setAttribute('aria-pressed', String(!pressed));
+		searchTerm = '概念验证';
+		performSearch();
+	}
 
     // 执行搜索
     function performSearch() {
-        const searchTerm = searchInput.value.trim();
-
+        
         // 过滤数据
         let results = dataset.filter(item => {
             if (!searchTerm) return true; // 如果搜索词为空，返回所有数据
@@ -70,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         currentResults = results;
         currentPage = 1;
         renderResults();
-        renderPagination();
+		renderPagination();
     }
 
 
@@ -117,9 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
 						
                     </div>
-                
             `;
-            
             resultsContainer.appendChild(resultElement);
         });
     }
@@ -270,10 +313,12 @@ document.addEventListener('DOMContentLoaded', function() {
 					
 				</section>
             `;
+			
+			paginationContainer.innerHTML = '';
         }
     };
 
-		// 点击容器内任何元素都会触发
+		// 点击容器内任何元素都会触发展开
 		resultsContainer.addEventListener('click', e => {
 		  // 事件目标元素
 		  const btn1 = e.target.closest('.toggle-btn1'); 
