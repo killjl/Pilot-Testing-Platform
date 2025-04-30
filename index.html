@@ -13,24 +13,50 @@
         <header class="header">
             <div class="header-content">
                 <h1>顺德区中试平台数据中心</h1>
-                <p>-</p>
             </div>
+			
+			<nav class="horizontal-menu">
+				<ul>
+					<li class="nav-button" onclick="window.location.reload()"><a href="#">首页</a></li>
+					<li class="nav-button"><a href="#">平台一览</a></li>
+					<li class="dropdown">
+					  <a href="#">类别</a>  <!-- 添加下拉箭头 -->
+					  <ul class="dropdown-menu">
+						<li class="nav-button"><a href="#">中试平台</a></li>
+						<li class="nav-button"><a href="#">概念验证中心</a></li>
+						<li class="nav-button"><a href="#">按镇街</a></li>
+						<li class="nav-button"><a href="#">按行业/产业</a></li>
+					  </ul>
+					</li>
+					<li class="nav-button"><a href="#">政策通知</a></li>
+				</ul>
+			</nav>
+			
             <div class="search-bar">
                 <input type="text" id="searchInput" placeholder="请输入搜索关键词...">
                 <button id="searchButton"><i class="fas fa-search"></i></button>
             </div>
         </header>
+		
+		
         
         <main class="main-content">
 		
 			<div class="results-container" id="resultsContainer">
 				<!-- 搜索结果将在这里动态生成 -->
+				<!--
 				<div class="sidebar">
 					<div class="sidebar-header">
-						<div class="sidebar-title">XXX</div>
+						<div class="sidebar-title">目录</div>
 					</div>
-					
+					<ul class="menu" id="mainMenu">
+						<!-- 动态生成菜单 --
+					</ul>
 				</div>
+				
+				<div class="seletion" id="seletionarea">
+					
+				</div> -->
 				
 			</div>
 			

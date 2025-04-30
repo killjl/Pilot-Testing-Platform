@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	const cardall = document.getElementById('allsearch');
 	const cardzs = document.getElementById('zssearch');
 	const cardgn = document.getElementById('gnsearch');
-	const areagroup = document.getElementById('areasearch');
-	const indusgroup = document.getElementById('indussearch');
+	//const areagroup = document.getElementById('areasearch');
+	//const indusgroup = document.getElementById('indussearch');
 
     // 分页设置
     const itemsPerPage = 5;
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	cardall.addEventListener('click', allsearch);
 	cardzs.addEventListener('click', zssearch);
 	cardgn.addEventListener('click', gnsearch);
-	areagroup.addEventListener('click', areasearch);
-	indusgroup.addEventListener('click', indussearch);
+	//areagroup.addEventListener('click', areasearch);
+	//indusgroup.addEventListener('click', indussearch);
     searchButton.addEventListener('click', clicksearch);
     searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') clicksearch();
@@ -339,4 +339,155 @@ document.addEventListener('DOMContentLoaded', function() {
 			content3.classList.toggle('expanded');
 		  }
 		});
+		
+		//首页
+		/*
+		const menuData = [
+			{
+				id: 'alllist',
+				title: '概览'
+			},
+			{
+				id: 'zslist',
+				title: '中试平台'
+			},
+			{
+				id: 'gnlist',
+				title: '概念验证中心'
+			},
+			{
+				id: 'clazz',
+				title: '类别',
+				submenu: [
+					{
+						id: 'area-list',
+						title: '按镇街',
+						content: {
+							
+						}
+					},
+					{
+						id: 'indus-list',
+						title: '按行业/产业',
+						content: {
+							
+						}
+					}
+				]
+			}
+		];
+
+    const mainMenu = document.getElementById('mainMenu');
+    const seletionarea = document.getElementById('seletionarea');
+
+    // 渲染菜单
+    function renderMenu() {
+        mainMenu.innerHTML = ``;
+        menuData.forEach(item => {
+            const li = document.createElement('li');
+            li.className = 'menu-item';
+            li.dataset.id = item.id;
+            
+            if (item.submenu) {
+                // 有子菜单的项
+                li.innerHTML = `
+                    <div class="menu-title">
+                        <span class="menu-text">${item.title}</span>
+                        <i class="fas fa-chevron-right menu-arrow"></i>
+                    </div>
+                    <ul class="submenu">
+                        ${item.submenu.map(subItem => `
+                            <li class="submenu-item" data-id="${subItem.id}">
+                                ${subItem.title}
+                            </li>
+                        `).join('')}
+                    </ul>
+                `;
+                
+                const menuTitle = li.querySelector('.menu-title');
+                const submenu = li.querySelector('.submenu');
+                const arrow = li.querySelector('.menu-arrow');
+                
+                menuTitle.addEventListener('click', function() {
+                    submenu.classList.toggle('open');
+                    arrow.classList.toggle('rotated');
+                });
+                
+                // 子菜单项点击事件
+                li.querySelectorAll('.submenu-item').forEach(subItem => {
+                    subItem.addEventListener('click', function() {
+                        // 移除所有活动状态
+                        document.querySelectorAll('.menu-title, .submenu-item').forEach(el => {
+                            el.classList.remove('active');
+                        });
+                        
+                        // 设置当前活动状态
+                        menuTitle.classList.add('active');
+                        this.classList.add('active');
+                        
+                        // 显示内容
+                        const selectedSubItem = item.submenu.find(s => s.id === this.dataset.id);
+                        showContent(selectedSubItem.content);
+                    });
+                });
+            } 
+			else {
+                // 没有子菜单的项
+                li.innerHTML = `
+                    <div class="menu-title">
+                        <span class="menu-text">${item.title}</span>
+                    </div>
+                `;
+                
+                li.querySelector('.menu-title').addEventListener('click', function() {
+                    // 移除所有活动状态
+                    document.querySelectorAll('.menu-title, .submenu-item').forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    
+                    // 设置当前活动状态
+                    this.classList.add('active');
+                    
+                    // 显示内容
+                    showContent(item.content);
+                });
+            }
+            
+            mainMenu.appendChild(li);
+        });
+    }
+
+    // 显示内容
+    function showContent(content) {
+        seletionarea.innerHTML = `
+            <div class="detail-header">
+                <h1 class="detail-title">${content.title}</h1>
+            </div>
+            <div class="detail-body">
+                ${content.sections.map(section => `
+                    <div class="detail-section">
+                        <h3><i class="fas fa-chevron-circle-right"></i> ${section.title}</h3>
+                        <p>${section.content}</p>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    // 初始化
+    renderMenu();
+	*/
+	document.querySelectorAll('.dropdown').forEach(dropdown => {
+	  // 点击触发
+	  dropdown.addEventListener('click', (e) => {
+		e.stopPropagation();
+		dropdown.querySelector('.dropdown-menu').classList.toggle('show');
+	  });
+	  
+	  // 点击其他地方关闭
+	  document.addEventListener('click', () => {
+		dropdown.querySelector('.dropdown-menu').classList.remove('show');
+	  });
+	});
+	
 });
