@@ -32,8 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	const cardall = document.getElementById('allsearch');
 	const cardzs = document.getElementById('zssearch');
 	const cardgn = document.getElementById('gnsearch');
-	//const areagroup = document.getElementById('areasearch');
-	//const indusgroup = document.getElementById('indussearch');
+	const seeall = document.getElementById('seeall');
+	const seezs = document.getElementById('seezs');
+	const seegn = document.getElementById('seegn');
+	const areagroup = document.getElementById('areasearch');
+	const indusgroup = document.getElementById('indussearch');
+	
 
     // 分页设置
     const itemsPerPage = 5;
@@ -43,10 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 初始化
 	cardall.addEventListener('click', allsearch);
+	seeall.addEventListener('click', allsearch);
 	cardzs.addEventListener('click', zssearch);
-	cardgn.addEventListener('click', gnsearch);
-	//areagroup.addEventListener('click', areasearch);
-	//indusgroup.addEventListener('click', indussearch);
+	seezs.addEventListener('click', zssearch);
+	seegn.addEventListener('click', gnsearch);
+	areagroup.addEventListener('click', areasearch);
+	indusgroup.addEventListener('click', indussearch);
+	
     searchButton.addEventListener('click', clicksearch);
     searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') clicksearch();
@@ -60,13 +67,100 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 	
 	function areasearch(){
-		searchTerm = searchInput.value.trim();
-		performSearch();
+		resultsContainer.innerHTML = `
+			<section class="data-section">
+				<div class="section-header">
+					<h2>镇街列表</h2>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card" role="button"  id ="dasearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>大良街道</h3>
+							<p>10</p>
+						</div>
+					</div>
+					<div class="stat-card" role="button"  id ="rongsearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>容桂街道</h3>
+							<p>3</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="lunsearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>伦教街道</h3>
+							<p>0</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="leliusearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>勒流街道</h3>
+							<p>1</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="chensearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>陈村镇</h3>
+							<p>5</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="beisearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>北滘镇</h3>
+							<p>6</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="lecongsearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>乐从镇</h3>
+							<p>3</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="longsearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>龙江镇</h3>
+							<p>0</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="xinsearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>杏坛镇</h3>
+							<p>0</p>
+						</div>
+					</div>    
+					<div class="stat-card" role="button"  id ="junsearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>均安镇</h3>
+							<p>0</p>
+						</div>
+					</div>    
+						
+				</div>
+			</section>
+		`
 	}
 	
 	function indussearch(){
-		searchTerm = searchInput.value.trim();
-		performSearch();
+		resultsContainer.innerHTML = `
+			<section class="data-section">
+				<div class="section-header">
+					<h2>行业/产业列表</h2>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card" role="button"  id ="biosearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>生物医药</h3>
+							<p>X</p>
+						</div>
+					</div>
+					<div class="stat-card" role="button"  id ="housesearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>家电</h3>
+							<p>X</p>
+						</div>
+					</div> 
+				</div>
+			</section>					
+		`
 	}
 	
 	function allsearch(){
@@ -89,7 +183,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		searchTerm = '概念验证';
 		performSearch();
 	}
-
+	
+	
     // 执行搜索
     function performSearch() {
         
@@ -324,6 +419,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		  const btn1 = e.target.closest('.toggle-btn1'); 
 		  const btn2 = e.target.closest('.toggle-btn2'); 
 		  const btn3 = e.target.closest('.toggle-btn3'); 
+		  
+			const dagroup = e.target.closest('#dasearch');
+			const ronggroup = e.target.closest('#rongsearch');
+			const lungroup = e.target.closest('#lunsearch');
+			const leliugroup = e.target.closest('#leliusearch');
+			const chengroup = e.target.closest('#chensearch');
+			const beigroup = e.target.closest('#beisearch');
+			const leconggroup = e.target.closest('#lecongsearch');
+			const longgroup = e.target.closest('#longsearch');
+			const xingroup = e.target.closest('#xinsearch');
+			const jungroup = e.target.closest('#junsearch');
+			
+			const biogroup = e.target.closest('#biosearch');
+			const housegroup = e.target.closest('#housesearch');
 
 		  // 判断是否为需要处理的元素
 		  if (btn1) {
@@ -338,6 +447,56 @@ document.addEventListener('DOMContentLoaded', function() {
 			const content3 = document.querySelector('.bordered-text3');
 			content3.classList.toggle('expanded');
 		  }
+		  
+		    if (dagroup) {
+				searchTerm = '大良';
+				performSearch();
+			}
+			if (ronggroup){
+				searchTerm = '容桂';
+				performSearch();
+			}
+			if (lungroup){
+				searchTerm = '伦教';
+				performSearch();
+			}
+			if (leliugroup){
+				searchTerm = '勒流';
+				performSearch();
+			}
+			if (chengroup){
+				searchTerm = '陈村';
+				performSearch();
+			}
+			if (beigroup){
+				searchTerm = '北滘';
+				performSearch();
+			}
+			if (leconggroup){
+				searchTerm = '乐从';
+				performSearch();
+			}
+			if (longgroup){
+				searchTerm = '龙江';
+				performSearch();
+			}
+			if (xingroup){
+				searchTerm = '杏坛';
+				performSearch();
+			}
+			if (jungroup){
+				searchTerm = '均安';
+				performSearch();
+			}
+			
+			if (biogroup){
+				searchTerm = '生物医药';
+				performSearch();
+			}if (housegroup){
+				searchTerm = '家电';
+				performSearch();
+			}
+		  
 		});
 		
 		//首页
