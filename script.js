@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			id: 22,
 			name:'佛山市健康厨卫家电中试平台',
 			com:'广东万家乐燃气具有限公司',
-			industry:'轻工-家电',
+			industry:'轻工、家电',
 			town:'大良街道',
 			meter:'12000平米，广东万家乐燃气具有限公司内',
 			device:'暂无',
@@ -539,6 +539,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const seegn = document.getElementById('seegn');
 	const areagroup = document.getElementById('areasearch');
 	const indusgroup = document.getElementById('indussearch');
+	const notice = document.getElementById('notice');
 	
 
     // 分页设置
@@ -562,7 +563,18 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Enter') clicksearch();
     });
 	
+	notice.addEventListener('click', noticesearch);
 	
+	function noticesearch(){
+		resultsContainer.innerHTML = `
+			<section class="data-section">
+				<div class="section-header">
+					<h2>暂无</h2>
+				</div>
+			</section>					
+		`
+		paginationContainer.innerHTML = '';
+	}
 	
 	function clicksearch(){
 		searchTerm = searchInput.value.trim();
@@ -579,67 +591,58 @@ document.addEventListener('DOMContentLoaded', function() {
 					<div class="stat-card" role="button"  id ="dasearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>大良街道</h3>
-							<p>10</p>
 						</div>
 					</div>
 					<div class="stat-card" role="button"  id ="rongsearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>容桂街道</h3>
-							<p>3</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="lunsearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>伦教街道</h3>
-							<p>0</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="leliusearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>勒流街道</h3>
-							<p>1</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="chensearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>陈村镇</h3>
-							<p>5</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="beisearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>北滘镇</h3>
-							<p>6</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="lecongsearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>乐从镇</h3>
-							<p>3</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="longsearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>龙江镇</h3>
-							<p>0</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="xinsearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>杏坛镇</h3>
-							<p>0</p>
 						</div>
 					</div>    
 					<div class="stat-card" role="button"  id ="junsearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>均安镇</h3>
-							<p>0</p>
 						</div>
 					</div>    
 						
 				</div>
 			</section>
 		`
+		paginationContainer.innerHTML = '';
 	}
 	
 	function indussearch(){
@@ -652,18 +655,37 @@ document.addEventListener('DOMContentLoaded', function() {
 					<div class="stat-card" role="button"  id ="biosearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>生物医药</h3>
-							<p>X</p>
 						</div>
 					</div>
 					<div class="stat-card" role="button"  id ="housesearch" aria-pressed="false">
 						<div class="stat-info">
 							<h3>家电</h3>
-							<p>X</p>
 						</div>
 					</div> 
+					<div class="stat-card" role="button"  id ="cailiaosearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>新材料</h3>
+						</div>
+					</div>
+					<div class="stat-card" role="button"  id ="nengyuansearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>新能源</h3>
+						</div>
+					</div>
+					<div class="stat-card" role="button"  id ="zhuangbeisearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>制造业</h3>
+						</div>
+					</div>
+					<div class="stat-card" role="button"  id ="dianzisearch" aria-pressed="false">
+						<div class="stat-info">
+							<h3>电子电气</h3>
+						</div>
+					</div>
 				</div>
 			</section>					
 		`
+		paginationContainer.innerHTML = '';
 	}
 	
 	function allsearch(){
@@ -700,6 +722,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 String(item.com),
                 String(item.industry),
                 String(item.town)
+            ];
+            
+            return fieldsToSearch.some(field => {
+                let textf = field;
+                let term = searchTerm;
+				return textf.toLowerCase().includes(term.toLowerCase());
+            });
+        });
+
+
+        currentResults = results;
+        currentPage = 1;
+        renderResults();
+		renderPagination();
+    }
+	
+	function insSearch() {
+        
+        // 过滤数据
+        let results = dataset.filter(item => {
+            if (!searchTerm) return true; // 如果搜索词为空，返回所有数据
+            
+            const fieldsToSearch = [
+                String(item.industry)
             ];
             
             return fieldsToSearch.some(field => {
@@ -952,6 +998,10 @@ document.addEventListener('DOMContentLoaded', function() {
 			
 			const biogroup = e.target.closest('#biosearch');
 			const housegroup = e.target.closest('#housesearch');
+			const cailiaogroup = e.target.closest('#cailiaosearch');
+			const nengyuangroup = e.target.closest('#nengyuansearch');
+			const zhuangbeigroup = e.target.closest('#zhuangbeisearch');
+			const dianzigroup = e.target.closest('#dianzisearch');
 
 		  // 判断是否为需要处理的元素
 		  if (btn1) {
@@ -1009,11 +1059,27 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 			
 			if (biogroup){
-				searchTerm = '生物医药';
-				performSearch();
+				searchTerm = '医';
+				insSearch();
 			}if (housegroup){
-				searchTerm = '家电';
-				performSearch();
+				searchTerm = '家';
+				insSearch();
+			}
+			if (cailiaogroup){
+				searchTerm = '材料';
+				insSearch();
+			}
+			if (nengyuangroup){
+				searchTerm = '能源';
+				insSearch();
+			}
+			if (zhuangbeigroup){
+				searchTerm = '制造';
+				insSearch();
+			}
+			if (dianzigroup){
+				searchTerm = '电子';
+				insSearch();
 			}
 		  
 		});
