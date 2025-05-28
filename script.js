@@ -522,6 +522,26 @@ document.addEventListener('DOMContentLoaded', function() {
 			web:'无',
 			pht:'<img class="fixed-ratio-img" src="dazhong/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="dazhong/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="dazhong/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="dazhong/p4.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="dazhong/p5.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="dazhong/p6.webp"  alt="现场图片" loading="lazy">'
 		},
+		{
+			id: 27,
+			name:'大分子生物药中试平台',
+			com:'佛山汉腾生物科技有限公司',
+			industry:'生物制药、CDMO',
+			town:'乐从镇',
+			meter:'12000平方米',
+			device:'200L、500L抗体蛋白生产线（4条）',
+			address:'佛山市顺德区乐从镇科发路2号科荟生命科技产业中心7栋',
+			mnum:'22000',
+			hnum:'134人',
+			human:'韦庆焜',
+			phone:'18022345530',
+			inform:'12+4条生产线（共4层）、储运工程、公用配套工程、辅助工程、环保工程',
+			sevice:'抗体注射液、蛋白制品灌装生产',
+			sevcon:'抗体及重组蛋白原料药、制剂合同生产等服务',
+			wechat:'18022345530',
+			web:'汉腾生物CB',
+			pht:'<img class="fixed-ratio-img" src="hanteng/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="hanteng/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="hanteng/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="hanteng/p4.webp"  alt="现场图片" loading="lazy">'
+		},
         
         // 可以添加更多数据...
     ];
