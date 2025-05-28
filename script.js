@@ -551,6 +551,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	cardall.addEventListener('click', allsearch);
 	seeall.addEventListener('click', allsearch);
 	cardzs.addEventListener('click', zssearch);
+	cardgn.addEventListener('click', gnsearch);
 	seezs.addEventListener('click', zssearch);
 	seegn.addEventListener('click', gnsearch);
 	areagroup.addEventListener('click', areasearch);
@@ -776,13 +777,14 @@ document.addEventListener('DOMContentLoaded', function() {
         let paginationHTML = '';
         
         // 上一页按钮
+		/*
         paginationHTML += `
             <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} 
                     onclick="changePage(${currentPage - 1})">
                 上一页
             </button>
         `;
-        
+        */
         // 页码按钮
         for (let i = 1; i <= totalPages; i++) {
             paginationHTML += `
@@ -792,7 +794,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </button>
             `;
         }
-        
+        /*
         // 下一页按钮
         paginationHTML += `
             <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} 
@@ -800,7 +802,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 下一页
             </button>
         `;
-        
+        */
         paginationContainer.innerHTML = paginationHTML;
     }
 
