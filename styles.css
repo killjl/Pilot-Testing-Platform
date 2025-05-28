@@ -334,6 +334,14 @@ body {
     box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
 }
 
+	.bordered-text4 {
+		border: 2px solid #3498db; /* 边框颜色 */
+		padding: 20px;            /* 内边距 */
+		border-radius: 8px;       /* 圆角 */
+		margin-bottom: 1.2em; /* 段落间距 */
+	  max-height: 3000px;          /* 初始高度为0 */
+	  text-indent: 2em;
+	}
 	
 	.bordered-text1 {
 		border: 2px solid #3498db; /* 边框颜色 */
@@ -346,7 +354,7 @@ body {
 	}
 
 	.bordered-text1.expanded {
-	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	  max-height: 3000px;      /* 预估最大高度，需根据内容调整 */
 	}
 	
 	.bordered-text1 p {
@@ -368,7 +376,7 @@ body {
 	}
 
 	.bordered-text2.expanded {
-	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	  max-height: 3000px;      /* 预估最大高度，需根据内容调整 */
 	}
 	
 	.bordered-text2 p {
@@ -390,7 +398,7 @@ body {
 	}
 
 	.bordered-text3.expanded {
-	  max-height: 1000px;      /* 预估最大高度，需根据内容调整 */
+	  max-height: 3000px;      /* 预估最大高度，需根据内容调整 */
 	}
 	
 	.bordered-text3 p {
