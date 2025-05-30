@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			inform:'科技成果转化概念验证中心平台已建成总建筑面积约20,000平方米大楼，统筹配置了新能源、新材料、生物医药等领域的配套实验室6,000平方米，设备原值超2千万元，另配备了能满足试制生产、测试、加工要求的专用型中试实验室、通用性中试测试实验室以及机械加工中心，以及人才团队100余人。将围绕核心技术和高价值技术成果提供的概念验证服务打造成行业内概念验证中心标杆，着力破解科技成果转移转化难题。为全国90余所高校的科技成果转化提供概念验证服务，打造成为加速创新链与产业链融合的创新高地。',
 			sevice:'为数字PCR、体外快速诊断及配套试剂、离体肝脏灌注系统设备、离体肺脏灌注系统设备、便携式ECMO等医疗器械进行中试验证及国产化开发应企业在佛山落地转化。体外快速诊断及配套试剂已孵化成出高企。离体肝脏灌注系统设备、离体肺脏灌注系统设备已作为科研机在国内相关三甲医院投入应用，并获得了德国红点奖以及iF设计奖。便携式ECMO已作为科研机定型，并实现了85%以上的国产化（其中大部分核心零部件均已实现低成本高质量国产化），目前正在探索下一步融资。<p>提供的中试服务包括但不限于医疗健康（耗材生产组装）工艺：</p><p>1.整体工艺：设计图/方案--原始数据及方案分析处理（转化成加工数据及方案）--原材料准备--零件材料制备-组装-检测。</p><p>2.套包不需要涂覆(套包外壳)工艺: 拆包->清洗->组装->封装->灭菌。</p><p>3.套包不需要清洗(外购沽净管路)工艺：拆包->涂覆->组装->封装->灭菌。</p><p>4.套包全工序(自制泵头及管路)工艺：拆包->洗->覆->组->封装->灭菌。</p>',
 			sevcon:'1.在医疗器械开发领域，可提供概念验证服务，进行早期成果的可行性验证、应用场景、工艺改进、样品试制、临床应用、产品示范等。<p>2.在工业材料、医用材料和新能源材料等先进材料开发和测试领域，可提供概念验证服务。</p><p>3.通用机加和测试领域，可提供样品机加工、物质与成份测试、电子电路测试、材料性能测试、专业消毒等服务。</p><p>4.概念验证服务。通过配置人才团队、空间场地等资源，可提供仪器设备开发、自动化产线设计改造、人工智能、机械与软件设计、工业设计、试剂开发等技术服务。</p><p>5.人才培养，可为合作企业、单位提供研究生联合培养合作服务。 </p><p>6.研发支持与加工咨询，发挥科研平台和研发人员优势，解决客户开发、加工过程中的实际问题。</p>',
-			wechat:'',
-			web:'',
+			wechat:'xiaoling_may',
+			web:'无',
 			pht:'<img class="fixed-ratio-img" src="gongyanyuan/p2.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'构建“应用开发-技术研发-中试加速-成果产业化”的全链条成果转化服务体系，大力推进科技成果转化和产业化。2024年孵化新增企业8家，在孵企业27家。近五年，学院已服务企业300余家，累计牵头签订横向合同117项，合同金额超4300万元，协助培养上市公司1家，孵化或扶持科技型企业超50家，支持本地企业获批高新技术企业/专精特新企业37家，孵化企业累计总产值超40亿元。与广意集团、顺德区容桂经发办、南方医科大学、国药集团广东环球制药有限公司、顺德新容奇医院等单位组建医工产业联盟，并与广意集团共建先进材料中试与产业化基地，首期建设面积1000平方米，引进中试项目2项并搭建中试线2条。2024年9月，携手顺德高新区启动大学科技园共建，促进科教智力资源与市场创新资源紧密结合，加速科技成果向产业、产品转化，助力顺德区现代化创新园区建设。',
 			sevcon:'构建“应用开发-技术研发-中试加速-成果产业化”的全链条成果转化服务体系，大力推进科技成果转化和产业化。2024年孵化新增企业8家，在孵企业27家。近五年，学院已服务企业300余家，累计牵头签订横向合同117项，合同金额超4300万元，协助培养上市公司1家，孵化或扶持科技型企业超50家，支持本地企业获批高新技术企业/专精特新企业37家，孵化企业累计总产值超40亿元。与广意集团、顺德区容桂经发办、南方医科大学、国药集团广东环球制药有限公司、顺德新容奇医院等单位组建医工产业联盟，并与广意集团共建先进材料中试与产业化基地，首期建设面积1000平方米，引进中试项目2项并搭建中试线2条。2024年9月，携手顺德高新区启动大学科技园共建，促进科教智力资源与市场创新资源紧密结合，加速科技成果向产业、产品转化，助力顺德区现代化创新园区建设。',
 			wechat:'YzzjxtY0111',
-			web:'',
+			web:'无',
 			pht:'<img class="fixed-ratio-img" src="beikeda/p1.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			inform:'建设目标：以服务创新设计为抓手，建成集聚产、学、研、用（应用）、融（金融）资源，集人才培养、创新设计、制造融合，具有示范带动效用的工业设计概念验证中心。以工业设计概念验证提升附加值，促进工业设计与生产制造深度融合，服务产业，带动经济增长。建设内容：围绕传统产业及战略性新兴产业工业设计的产业链、创新链，围绕工业设计概念验证建设有关研发设计、质量检测认证、成果转化、供应链合作、行业数据分析、专门人才培养基地等。引导工业设计企业与家电生产制造业深度融合，加快产业转型升级，带动经济增长，形成产业竞争优势上的先驱示范作用。',
 			sevice:'建立了家电工业设计联盟；成为了全国首个“政产学研”一体化的“全国工程专业学位研究生联合培养开发基地”；建有“湾区设计人才联合培养基地”。依托联盟及设计人才优势，有效推动高层次、高水平的工业设计成为制造业自主创新实现产业升级的一条关键路径，让工业设计正日益成为制造企业经营的重要资源，成为企业竞争力的一大利器。改变部分企业依赖成本、价格、渠道的传统发展模式，以“产品设计”为核心的创意理念竞争是突破之路。',
 			sevcon:'一是成果转化服务。对接高校科技成果、企业科技成果和企业技术需求，开展概念验证、产品试制、检验检测、质量认证、模具制造等服务，有效降低企业设计成果转化成本，提高设计企业市场响应速度。<p>二是概念验证支撑服务。聚焦元器件数据、产品图谱、行业数据分析、设计项目案例等基础信息资源，进行概念验证支撑服务。</p><p>三是概念验证咨询服务。为企业提供工业设计相关的战略咨询、过程管理、技术支持、一揽子解决方案等业务服务。</p><p>四是人才培养，培养和引进工业设计高端人才和创新团队，以开放式人才培养模式，推动设计人才市内外双向交流和联合培养。</p> ',
-			wechat:'无',
+			wechat:'xiaoling_may',
 			web:'无',
 			pht:'<img class="fixed-ratio-img" src="gongyanyuan/p1.webp"  alt="现场图片" loading="lazy">'
 		},
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			name:'药品固体制剂生产中试平台',
 			com:'国药集团广东环球制药有限公司',
 			industry:'医药健康、生物医药与健康',
-			town:'容桂',
+			town:'容桂街道',
 			meter:'750平方米',
 			device:'粉碎机、振荡筛、干粉制粒机、多功能制粒机、湿法制粒机、包衣造粒机、总混机、压片机、包衣机、烘箱',
 			address:'佛山市顺德区容桂高新技术园科苑横三路2号',
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'暂未开放',
 			sevcon:'暂未开放',
 			wechat:'18142888990',
-			web:'/',
+			web:'无',
 			pht:'无'
 		},
 		{
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'平台持续深化科技体制机制改革、鼓励先行先试，打通学校科研人员携技术成果入驻开展中试放大、成果转化的通道。入驻项目紧密结合产业需求开展了核心技术攻关和科技成果中试验证、小批量生产，为区域新材料企业提供技术和产品开发、验证服务。比如，半导体设备零部件表面金属氧化物涂层中试线实现纳米级厚度和成分的实时精准沉积，服务于国内领先的半导体设备厂商；纳米特种材料中试线的改性纳米溶胶显著提升树脂机械性能（压缩强度提升50%）和耐高温性能（极限温度达到1500℃），已在数个航空航天单位和WQ上型号试用，验证结果良好，陶瓷基纳米粒子前驱体产量达500公斤/年。',
 			sevcon:'1.面向前沿新材料领域 开展新技术、新工艺或新产品等技术研发、中试验证；<p>2.为周边相关企业提供检测、验证服务。</p>',
 			wechat:'13452224046',
-			web:'华南理工大学科技园（公众号）',
+			web:'公众号：华南理工大学科技园',
 			pht:'<img class="fixed-ratio-img" src="huagong/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="huagong/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="huagong/p3.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'概念验证中心为智能家居主导企业提供技术可行性验证、产品应用性能评估、知识产权布局、标准符合性测试、标准研制以及成果转化等多个概念验证服务环节，有效助力企业提升产品竞争力和市场影响力。',
 			sevcon:'（1）为智能化关键技术提供涵盖技术可行性验证、产品应用性能评估、知识产权布局、科技成果评价等技术支持；<p>（2）提供包括验证流程设计、技术方案验证、共享实验平台、技术专家库等专业指导，打通成果转化的关键环节；</p><p>（3）提供技术标准解读、标准符合性测试、标准制修订等服务。</p>',
 			wechat:'18028171203',
-			web:'www.hnjdy.com, gdhnjdy',
+			web:'网址：www.hnjdy.com, 公众号：gdhnjdy',
 			pht:'<img class="fixed-ratio-img" src="jiadianyuan/p1.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'已建设完成，积极为陶瓷抛光磨削、陶瓷切割、金属抛光等相关恒业提供技术咨询和服务。',
 			sevcon:'1.试验方案设计与优化。根据客户的需求和产品特性，提供全面、科学的试验方案。<p>2.试验设备与技术支持。试验设备来自依托单位为行业内龙头企业，设备性能保障。</p><p>3.试验数据分析与报告撰写。中试后对试验数据进行专业、深入的分析，可出具试验报告。</p><p>4.产品性能测试与评估。新产品的全面的性能测试服务，包括可靠性、稳定性、安全性等方面的评估。</p><p>5.研发过程跟进与优化。产品研发过程中可持续关注项目进度，并提供必要的支持。</p><p>6.技术培训与产学研交流。企业内部及产学研合作单位可针对相关试验人员进行产品性能、试验方法、数据分析方法等的培训。</p>',
 			wechat:'18320709048',
-			web:'科达制造',
+			web:'公众号：科达制造',
 			pht:'<img class="fixed-ratio-img" src="keda/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="keda/p2.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'中试平台自建设以来，已为6家客户及中小企业提供研发、测试、中试验证等服务，目前已经获得39.33万元的服务收入。',
 			sevcon:'1.家电智控行业的关键共性技术研究服务：提供车载冰箱控制、储能控制、储能面板显示模组、APP、AI识别模块等智控技术研发服务。<p>2.测试验证服务：提供EMC电磁兼容检测、安全性能及逻辑功能综合检测、产品可靠性评估及设计验证检测等测试验证服务。</p><p>3.关键工艺与装备中试服务：提供新产品的工艺验证及中试验证服务。</p><p>4.人才引进培养及科技成果转化服务：与高校共建联合培养研究生示范基地，培养专业人才，在人才培养、技术合作、成果转化方面开展合作。',
 			wechat:'13827758615',
-			web:'www.realdesign.com.cn',
+			web:'网址：www.realdesign.com.cn',
 			pht:'<img class="fixed-ratio-img" src="ruide/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="ruide/p2.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'1、特种空调产品质量性能测试<p>2、金属原材料成分测试</p><p>3、精密尺寸测量</p>',
 			sevcon:'1、飞机地面空调机组、蒸发冷却式空调机组、水地源热泵机组、冷水机组、组合式空调机组、柜式空调机组、洁净机、单元式空气调节机、风管送风式空调、制冷和空调设备、屋顶式空气调节机组、计算机和数据处理机房用单元式空气调节机、精密空调机组、通讯机房用恒温恒湿空调系统、列间式温控设备、空气源热泵干燥机组等产品测试。<p>2、碳基元素、铜基元素、铝基元素化学成分测试</p><p>3、精密产品精密尺寸测量</p>',
 			wechat:'无',
-			web:'www.shenling.com',
+			web:'网址：www.shenling.com',
 			pht:'<img class="fixed-ratio-img" src="shenling/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="shenling/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="shenling/p3.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -278,8 +278,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			inform:'平台建设周期为三年，依托广东省企业技术中心、城网电气设备技术中心和国家认可实验室，平台研究内容覆盖高效节能变压器（含干式和油浸式配电变和电力变）、超导储能用干式整流变压器、风电机舱用高效高防腐气液双循环冷却干式变压器、机舱用大容量液浸式变压器和海上风电用66kV等级干式变压器、第三代先进压水堆核电机组专用励磁干式变压器、电抗器、组合式变压器等常见及清洁能源领域的电力设备。',
 			sevice:'暂无',
 			sevcon:'建成开放的国际先进、国内领先水平的清洁能源用变配电设备中试平台，向外提供电力设备产品测试。',
-			wechat:'/',
-			web:'/',
+			wechat:'无',
+			web:'无',
 			pht:'<img class="fixed-ratio-img" src="shunte/p1.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'服务了一方制药、环球制药、大冢制药、广意集团等30多家企业。',
 			sevcon:'1.共性技术研发：针对中医药康养产业“卡脖子”问题，搭建中医药康养新产品中试线，承担广东省和国家攻关工程，开展中医药康养新产品开发共性技术研发及应用； 2.中医药康养新产品中试服务：提供产品中试验证服务； 3.国产中医药康养产品生产、检验装备及材料验证服务：为国产压片机、胶囊机、色谱仪、医药用新材料等生产、检验设备和材料验证提供服务，推动先进大健康产品国产化； 4.人才引进及培养：依托中试平台，引进海外高端人才开展中医药康养新产品开发和工艺提升，为本地培养中医药康养新产品生产工艺、质控、装备、材料等专业技术人才。',
 			wechat:'yxyangwh',
-			web:'(空)',
+			web:'无',
 			pht:'<img class="fixed-ratio-img" src="shunzhiyuanzhongyiyao/p1.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'1.通过中试服务，助力某光刻胶研发企业成功解决其光刻胶生产用反应釜浸出金属含量超标、包装物选型不当等问题；结合仪器原理和方法开发，顺利解决了某高校微电子学院所研制的光刻胶存在部分元素含量测不出、测不准的问题。<p>2.自主研发的超净高纯湿电子化学品纯化装置已在上海大学、浙江自立高分子化工材料有限公司等单位进行应用，经纯化过滤后，其光刻胶、乙醇、酚醛树脂中的金属杂质含量显著降低，达到其研发、生产要求。</p><p>3.平台开发的超净高纯湿电子化学品纯化装置针对重庆中润新材料股份有限公司生产的N-甲基吡咯烷酮（NMP），实现了关键杂质的高精度控制：将金属离子含量降至0.1ppb 以下，达到半导体级高纯标准（对应 SEMI G4 等级要求，通常需金属杂质≤0.1ppb），同步优化纯化流程将水分含量稳定控制在100ppm左右，满足高端电子制程对溶剂低含水量的严苛需求（如集成电路制造中溶剂水分需＜500ppm）</p><p>4.针对音芙医药科技(上海)有限公司生产的药物中间体面临的重金属含量超标问题（原重金属含量＞100 ppm，超出标准要求），本中试平台通过定制化纯化工艺优化，成功将重金属元素含量控制在1 ppb 以下，完全符合标准对药物中间体的重金属限量要求（通常要求单一重金属≤10 ppb，总重金属≤20 ppb）。<p/>',
 			sevcon:'面向光刻材料、湿电子化学品、超纯水等提供化学分析、理化性能、分离纯化等检测或技术服务，如下：<p>1.痕量金属元素、阴阳离子、液体颗粒等检测</p><p>2.膜厚、粘度、密度、固含量、含水率、电阻率、pH、接触角等</p><p>3.光刻胶感光性能测试（Eth感度、AB参数、透过率）</p><p>4.分离纯化（有机溶剂、醇类等）</p>',
 			wechat:'18038802594',
-			web:'暂无',
+			web:'无',
 			pht:'<img class="fixed-ratio-img" src="tejianyuan/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tejianyuan/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tejianyuan/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tejianyuan/p4.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tejianyuan/p5.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'2023年承接CDMO业务营收1500万元以上。开发了细菌分散比浊仪、细菌超声分散计数仪、全自动样品处理系统、细菌浊度标准管等多款产品。',
 			sevcon:'提供医疗器械CRDMO一站式服务，包括IVD试剂转化平台和有源仪器转化平台，服务范围：<p>一、委托/合作研发服务（产品涉及、产品开发）</p><p>二、委托生产服务（工艺转化、中试评估验证、批量生产）</p><p>三、法规咨询服务（临床评价、注册申报、质量体系辅导）；</p><p>四、IVD试剂转化平台包括POCT平台、酶联免疫平台、化学发光平台、微生物平台和分子生物平台。</p>',
 			wechat:'17701917170',
-			web:'http://www.tbhealthcare.com/，体必康科研',
+			web:'网址：http://www.tbhealthcare.com/，公众号：体必康科研',
 			pht:'<img class="fixed-ratio-img" src="tibikang/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tibikang/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tibikang/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tibikang/p4.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="tibikang/p5.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'目前为万家乐及下属全资子公司提供检测及技术支持服务',
 			sevcon:'1.厨卫家电产品测试：可完成研发设计到量产的试验,包括进行整机（燃气热水器、电热水器、净水器、燃气灶具、吸油烟机、蒸烤箱、集成灶、消毒柜）和各产品核心零部件测评、进行国标要求试验，也可根据产品需求进行针对性试验。 2.工艺验证：搭建了面向厨卫家电行业冲压、焊接、压铸、总装、物流自动化输配等工艺的中试验证线，可完成面向物流、焊接、冲压等复杂应用工艺的功能性能可靠性验证测试。 3.测试数字化：测试数字化涵盖测试的设计、执行、结果分析和报告输出等全过程，可提高测试效率、降低人为错误、增强测试覆盖率和一致性，并通过实时数据分析支持决策。',
 			wechat:'18676562013',
-			web:'万家乐',
+			web:'公众号：万家乐',
 			pht:'<img class="fixed-ratio-img" src="wanjiale/p1.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -379,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'平台建设以来，已经接受5个医工交叉概念验证产品的试制、小批量试产服务，帮助项目获得Ⅰ类产品备案证3张，Ⅰ类生产备案凭证1张（涵盖5个产品的生产范围），Ⅱ类医疗器械产品注册证1张（本企业获得二类医疗器械生产许可证件1张）。具体包括：<p>1、二氧化碳吸收器产品一类医疗器械备案、小批量试产、中试批量试制。（已获得一类产品备案证）</p><p>2、全自动电泳仪产品一类医疗器械备案、小批量试产。（已获得一类产品备案证）</p><p>3、全自动脂蛋白图像分析系统小批量试产等。（已获得二类医疗器械产品注册证）</p><p>同时，与广东省人民医院和佛山市第一人民医院签订专利许可协议各一份，自筹资金帮助院内医生开展医疗器械产品试制、医疗器械产品注册和建设产品小规模试产所需的生产线和检测设备，帮助医工产品开发、注册、量产，加速未来产业前沿技术成果熟化落地及商业化。</p>',
 			sevcon:'能提供的服务内容：</p><p>1.概念验证产品试制服务：根据产品确定医疗器械类别，评估产品合规性和可否批量生产，市场价值评估。</p><p>2.医疗器械产品分类界定和注册服务：专业团队帮助医工概念验证产品进行医疗器械产品备案登记注册，达到小批量试产条件。</p><p>3.产品二次优化、小批量试产和中试生产服务：充分发挥中试服务平台优势，帮忙概念验证项目进行可靠性、成本的二次优化，并搭建小批量试产和中试批量生产线，开展小批量试产和中试试产服务。</p>',
 			wechat:'18138525768',
-			web:'/',
+			web:'无',
 			pht:'<img class="fixed-ratio-img" src="weiningshun/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="weiningshun/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="weiningshun/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="weiningshun/p4.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="weiningshun/p5.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -439,7 +439,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'小批量中试，技术服务',
 			sevcon:'1.示范工厂：展现基于传感器技术、先进的数据处理和智能设备如何改进生产过程，实现工业4.0解决方案从研究转入实践的目标。 2.工业4.0技术咨询与服务：开展工业4.0技术咨询、项目规划与生产优化、技术支持与服务等工作，帮助企业技术提升与生产优化。智能制造方案论证，流程测试。工业软件流程测试。',
 			wechat:'13823419908',
-			web:'(空)',
+			web:'无',
 			pht:'<img class="fixed-ratio-img" src="shunzhiyuanyachen/p1.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'暂无对外开放',
 			sevcon:'暂无对外开放',
 			wechat:'goshenpan',
-			web:'https://www.yizumi.com/',
+			web:'网址：https://www.yizumi.com/',
 			pht:'<img class="fixed-ratio-img" src="yizhimi/p1.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -479,7 +479,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			sevice:'深耕大湾区家电企业，与家电头部企业如美的、小米等已开展紧密合作，目前聚焦家电领域的智能化、健康技术、绿色低碳、适老化设计等方向进行积极开拓与研发。	   <p>服务优势：</p><p>※权威背书：国家级科研平台，技术能力获政府与国际机构双重认可。  </p><p>※全链条覆盖：助力家电企业从研发到市场准入、市场推广，提供“一站式”解决方案。</p><p>※行业引领：牵头或参与制定国家标准（GB）、行业标准（QB）及团体标准，覆盖传统家电、智能家电、绿色节能等领域。</p>',
 			sevcon:'1.科研:为企业核心专利技术提供国际国内领先先进的科技鉴定服务；<p>2.标准:参与家用电器国际、国家、行业标准的制定与修订工作；能为企业定制化团体标准；为企业提供标准咨询与解读服务;</p><p>3.检测:提供专业的家用电器产品检验服务，确保产品质量符合相关标准和法规要求:</p><p>4.认证:提供全面的产品认证服务，包括国内外各类产品认证，帮助企业获得市场准入资格及宣传抓手</p><p>5.计量:提供专业的计量校准服务，确保企业测量设备的准确性和可靠性，满足生产和质量控制需求。</p>',
 			wechat:'13450537503',
-			web:'微信公众号：广东中家智锐',
+			web:'公众号：广东中家智锐',
 			pht:'<img class="fixed-ratio-img" src="zhongjiayuan/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="zhongjiayuan/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="zhongjiayuan/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="zhongjiayuan/p4.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="zhongjiayuan/p5.webp"  alt="现场图片" loading="lazy">'
 		},
 		{
@@ -542,7 +542,47 @@ document.addEventListener('DOMContentLoaded', function() {
 			web:'汉腾生物CB',
 			pht:'<img class="fixed-ratio-img" src="hanteng/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="hanteng/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="hanteng/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="hanteng/p4.webp"  alt="现场图片" loading="lazy">'
 		},
-        
+		{
+			id: 28,
+			name:'佛山市智能功率模块封装中式平台',
+			com:'海信家电集团股份有限公司',
+			industry:'功率半导体、集成电路',
+			town:'容桂街道',
+			meter:'2500㎡',
+			device:'对外服务范围内涉及仪器设备均可对外共享',
+			address:'广东省佛山市顺德区容桂丰业路2号',
+			mnum:'4000',
+			hnum:'30人',
+			human:'张嫚嫚',
+			phone:'17838862890',
+			inform:'平台集功率半导体先进技术研究、产品封装、产品检测分析为一体，参考ISO17025标准体系建设，秉承“科学、公正、准确、高效”的理念，引入半导体封装及检测设备，致力于打造先进的功率半导体关键技术重点实验平台。同时开放平台对外共享，以推动产业链融合和共同进步。',
+			sevice:'暂无',
+			sevcon:'平台服务内容包括封装工程、封装性能检测、电学特性测评、可靠性测评及应用系统评估；覆盖产品从器件级到系统级的全面测试与评估。可提供标准化、定制化及批量筛选服务。',
+			wechat:'17838862890',
+			web:'公众号：KeyMoon Semiconductor',
+			pht:'<img class="fixed-ratio-img" src="haixin/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="haixin/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="haixin/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="haixin/p4.webp"  alt="现场图片" loading="lazy">'
+		},
+        {
+			id: 29,
+			name:'佛山市顺德区乐从医院数字医疗与成果转化概念验证中心',
+			com:'佛山市顺德区乐从医院',
+			industry:'医数字医疗产品开发验证及科技成果转化',
+			town:'乐从镇',
+			meter:'博士工作站',
+			device:'医院的检验设备；64排CT和40排方舱CT；1.5T核磁共振等',
+			address:'佛山市顺德区乐从镇乐从大道45号',
+			mnum:'300',
+			hnum:'11人',
+			human:'孙井松；蒋微',
+			phone:'13929109717',
+			inform:'1、集成人工智能算法和大数据分析技术，对医学影像进行AI分析和辅助诊断，例如：数智支撑慢病大数据健康管理模型的预测和验证。。<p>2、再生医学领域方面新技术在基层的场景应用可行性验证。</p><p>3、基于CT图像分割3D打印模型研发的验证。</p><p>4、基于外科手术导航系统相关领域研发的验证。</p><p>5、新药研发验证：利用大数据分析和AI技术，对新药的疗效和安全性进行快速评估。</p><p>6、医疗设备测试验证：对新型医疗设备进行临床试验，验证其性能和适用性。</p><p>7、数字医疗相关的各种产品、课题及文章可行性验证。</p>',
+			sevice:'概念验证、产品开发及市场调研，成果转化工作',
+			sevcon:'AI辅助诊疗与智能健康管理；互联网医院与远程医疗服务；智慧家床与慢病管理；医企融合与健康服务；3D打印与医学转化应用；科研合作与技术创新',
+			wechat:'13929109717',
+			web:'无',
+			pht:'<img class="fixed-ratio-img" src="lecongyiyuan/p1.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="lecongyiyuan/p2.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="lecongyiyuan/p3.webp"  alt="现场图片" loading="lazy"><br><img class="fixed-ratio-img" src="lecongyiyuan/p4.webp"  alt="现场图片" loading="lazy">'
+		},
+		
         // 可以添加更多数据...
     ];
 
@@ -781,15 +821,39 @@ document.addEventListener('DOMContentLoaded', function() {
         renderResults();
 		renderPagination();
     }
+	
+	function aSearch() {
+        
+        // 过滤数据
+        let results = dataset.filter(item => {
+            if (!searchTerm) return true; // 如果搜索词为空，返回所有数据
+            
+            const fieldsToSearch = [
+                String(item.town)
+            ];
+            
+            return fieldsToSearch.some(field => {
+                let textf = field;
+                let term = searchTerm;
+				return textf.toLowerCase().includes(term.toLowerCase());
+            });
+        });
+
+
+        currentResults = results;
+        currentPage = 1;
+        renderResults();
+		renderPagination();
+    }
 
 
     // 渲染结果
     function renderResults() {
         if (currentResults.length === 0) {
             resultsContainer.innerHTML = `
-                <div class="no-results">
-                    <p>没有找到匹配的结果</p>
-                </div>
+				<div class="section-header">
+					<h2>没有找到匹配的结果</h2>
+				</div>
             `;
             return;
         }
@@ -1039,43 +1103,43 @@ document.addEventListener('DOMContentLoaded', function() {
 		  
 		    if (dagroup) {
 				searchTerm = '大良';
-				performSearch();
+				aSearch();
 			}
 			if (ronggroup){
 				searchTerm = '容桂';
-				performSearch();
+				aSearch();
 			}
 			if (lungroup){
 				searchTerm = '伦教';
-				performSearch();
+				aSearch();
 			}
 			if (leliugroup){
 				searchTerm = '勒流';
-				performSearch();
+				aSearch();
 			}
 			if (chengroup){
 				searchTerm = '陈村';
-				performSearch();
+				aSearch();
 			}
 			if (beigroup){
 				searchTerm = '北滘';
-				performSearch();
+				aSearch();
 			}
 			if (leconggroup){
 				searchTerm = '乐从';
-				performSearch();
+				aSearch();
 			}
 			if (longgroup){
 				searchTerm = '龙江';
-				performSearch();
+				aSearch();
 			}
 			if (xingroup){
 				searchTerm = '杏坛';
-				performSearch();
+				aSearch();
 			}
 			if (jungroup){
 				searchTerm = '均安';
-				performSearch();
+				aSearch();
 			}
 			
 			if (biogroup){
