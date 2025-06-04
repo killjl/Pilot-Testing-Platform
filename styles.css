@@ -533,12 +533,57 @@ body {
 	  transform: translateY(1px);  /* 点击下沉效果 */
 	}
 
+.toggle-btnback {
+	  padding: 12px 80px;
+	  /* 白色半透明基底 + 蓝色微渐变 */
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.9),  /* 主背景白色，适当透明 */
+		rgba(225, 240, 255, 0.7)   /* 添加淡蓝色渐变层 */
+	  );
+	  backdrop-filter: blur(8px);    /* 毛玻璃模糊效果 */
+	  color: #333333;                /* 文字用深蓝色 */
+	  border: 1px solid rgba(33, 150, 243, 0.3);  /* 边框浅蓝色 */
+	  border-radius: 12px;
+	  cursor: pointer;
+	  font-size: 1.2rem;
+	  font-weight: bold;
+	  flex-direction: row;
+	  text-align: center;
+	  transition: all 0.3s;
+	  box-shadow: 
+		0 4px 6px rgba(26, 115, 232, 0.1), /* 外阴影（蓝色调） */
+		inset 0 1px 2px rgba(255, 255, 255, 0.5); /* 内高光 */
+	}
+
+	.toggle-btnback:hover {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.95),
+		rgba(210, 230, 255, 0.8)
+	  );
+	  border-color: rgba(33, 150, 243, 0.5);  /* 边框颜色加深 */
+	  box-shadow: 
+		0 6px 12px rgba(26, 115, 232, 0.15),
+		inset 0 2px 4px rgba(255, 255, 255, 0.6);
+	}
+	
+	.toggle-btnback:active {
+	  background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.85),
+		rgba(200, 220, 245, 0.7)
+	  );
+	  transform: translateY(1px);  /* 点击下沉效果 */
+	}
+
 
 .fixed-ratio-img {
   position: block;
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin-bottom: 1.2em;
 }
 
 

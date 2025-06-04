@@ -838,6 +838,36 @@ document.addEventListener('DOMContentLoaded', function() {
 		renderPagination();
     }
 	
+	function backSearch() {
+        
+        // 过滤数据
+        let results = dataset.filter(item => {
+            if (!searchTerm) return true; // 如果搜索词为空，返回所有数据
+            
+            const fieldsToSearch = [
+                String(item.name),
+                String(item.com),
+                String(item.industry),
+                String(item.town)
+            ];
+            
+            return fieldsToSearch.some(field => {
+                let textf = field;
+                let term = searchTerm;
+				return textf.toLowerCase().includes(term.toLowerCase());
+            });
+        });
+
+
+        currentResults = results;
+        renderResults();
+		renderPagination();
+		window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+    }
+	
 	function insSearch() {
         
         // 过滤数据
@@ -1096,9 +1126,15 @@ document.addEventListener('DOMContentLoaded', function() {
 					<div> ${item.pht}</div>
 					
 				</section>
+				
+				<button class="toggle-btnback" >返  回</button>
             `;
 			
 			paginationContainer.innerHTML = '';
+			window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     };
 
@@ -1108,6 +1144,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		  const btn1 = e.target.closest('.toggle-btn1'); 
 		  const btn2 = e.target.closest('.toggle-btn2'); 
 		  const btn3 = e.target.closest('.toggle-btn3'); 
+		  const btnb = e.target.closest('.toggle-btnback'); 
 		  
 			const dagroup = e.target.closest('#dasearch');
 			const ronggroup = e.target.closest('#rongsearch');
@@ -1139,6 +1176,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		  if (btn3) {
 			const content3 = document.querySelector('.bordered-text3');
 			content3.classList.toggle('expanded');
+		  }
+		  if (btnb) {
+			backSearch()
 		  }
 		  
 		    if (dagroup) {
